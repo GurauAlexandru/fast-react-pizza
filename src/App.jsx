@@ -9,7 +9,7 @@ import CreateOrder, {
 import Order, { loader as orderLoader } from "./features/order/Order";
 import AppLayout from "./ui/AppLayout";
 import Error from "./ui/Error";
-import { action as updateOrderAction } from "./features/order/Updateorder";
+import { updateOrderAction } from "./features/order/Updateorder";
 
 const router = createBrowserRouter([
   {
