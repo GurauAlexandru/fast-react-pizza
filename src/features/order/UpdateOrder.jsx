@@ -12,7 +12,7 @@ import { updateOrder } from "../../services/apiRestaurant";
 //     </fetcher.Form>
 //   );
 // };
-const UpdateOrder2 = () => {
+const UpdateOrder = () => {
   const fetcher = useFetcher();
 
   return (
@@ -22,11 +22,11 @@ const UpdateOrder2 = () => {
   );
 };
 
-export default UpdateOrder2;
-
 export async function action({ params }) {
   const data = { priority: true };
   await updateOrder(params.orderId, data);
 
   return null;
 }
+
+export default UpdateOrder;

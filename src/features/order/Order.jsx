@@ -9,7 +9,7 @@ import {
 } from "../../utils/helpers";
 import OrderItem from "./OrderItem";
 import { useEffect } from "react";
-import UpdateOrder from "./Updateorder";
+// import UpdateOrder from "./UpdateOrder";
 
 function Order() {
   const order = useLoaderData(); //fetch data from APIx
@@ -90,7 +90,7 @@ function Order() {
         </p>
       </div>
 
-      {!priority && <UpdateOrder order={order} />}
+      {/* {!priority && <UpdateOrder order={order} />} */}
     </div>
   );
 }
